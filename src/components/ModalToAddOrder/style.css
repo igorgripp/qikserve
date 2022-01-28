@@ -1,0 +1,142 @@
+.container-modal{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100vh;
+  background-color:rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.content-modal{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  height: auto;
+  padding-bottom: 0.5rem;
+  background-color: var(--clr-light);
+}
+
+.item-picture{
+  position: relative;
+  display: flex;
+  align-items: start;
+  justify-content: flex-end;
+  width: 100%;
+  height: 12rem;
+  overflow: hidden;
+}
+
+.modal-picture{
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.item-resume{
+  padding: 1rem 2rem;
+  border-bottom: 1px rgba(73, 75, 80, 0.1) solid;
+}
+
+.item-resume h1{
+  font-style: bold;
+  font-size: 1.5rem;
+  color: var(--clr-dark-900);
+}
+
+.item-resume p{
+  margin: 0.5rem 0;
+  font-family: var(--ff-light);
+  font-size: 0.75rem;
+  color: var(--clr-dark-100);
+}
+
+.quantity-choose{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  padding-bottom: 2rem;
+  border-bottom: 1px rgba(73, 75, 80, 0.1) solid;
+}
+
+.quantity-choose h3{
+  font-style: bold;
+  font-size: 1rem;
+  color: var(--clr-dark-900);
+  padding: 1rem;
+}
+
+.quantity-choose h1{
+  font-style: bold;
+  font-size: 1.5rem;
+  color: var(--clr-dark-900);
+  padding: 0 1rem;
+}
+
+.choose{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quantity{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+}
+
+.button-add-order{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem;
+  padding: 0.5em;
+  background-color: var(--clr-accend-2);
+  border-radius: 5px;
+  color: var(--clr-light);
+  font-size: 1.5rem;
+  width: calc(100% - 1rem - 1em);
+  cursor: pointer;
+}
+
+.close-modal-button{
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  margin: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--clr-light);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.close-modal-button::before{
+  position: absolute;
+  content: " ";
+  display: block;
+  top: 0.95rem;
+  left: 0.5rem;
+  width: 1rem;
+  border-top: 2px solid;
+  transform: rotate(-45deg);
+  border-radius: 30px;
+}
+
+.close-modal-button::after{
+  position: absolute;
+  content: " ";
+  display: block;
+  top: 0.95rem;
+  left: 0.5rem;
+  width: 1rem;
+  border-top: 2px solid;
+  transform: rotate(45deg);
+  border-radius: 30px;
+}

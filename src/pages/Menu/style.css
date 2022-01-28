@@ -1,0 +1,47 @@
+.content-items{
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  margin-top: 5rem;
+}
+
+
+.promotions-content{
+  display: flex;
+  font-size: 0.5rem;
+  color: var(--clr-light);
+}
+
+.promotion{
+  margin: 0.75rem 0;
+  padding: 1em 1em;
+  border-radius: 5px;
+}
+
+.QTY_BASED_PRICE_OVERRIDE{
+  background-color: red;
+}
+
+.BUY_X_GET_Y_FREE{
+  background-color: var(--clr-accend);
+}
+
+.FLAT_PERCENT{
+  background-color: var(--clr-accend-2)
+}
+
+.flat-price{
+  position: relative;
+  margin-left: 1rem;
+  font-size: 1.25rem !important;
+  color: red !important;
+}
+
+.flat-price::before{
+  content: ' ';
+  position: absolute;
+  width: 3rem;
+  bottom: 10px;
+  left: -59px;
+  border: 1px solid red;
+}

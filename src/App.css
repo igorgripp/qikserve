@@ -1,38 +1,189 @@
+:root{
+  --clr-light: #fff;
+  --clr-light-100: #eeeeee;
+
+  --clr-dark-100: #494b50;
+  --clr-dark-300: #34353a;
+  --clr-dark-900: #1d1b1b;
+
+  --clr-accend: #0000A9;
+  --clr-accend-2: #17958D;
+
+  --ff-light: "stratos-lights";
+  --ff-normal: "stratos";
+
+}
+
 .App {
-  text-align: center;
+  font-family:  var(--ff-normal),  sans-serif !important;
+  letter-spacing: .1rem;
+  font-size: 16px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.button-expand{
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.button-expand::before{
+  position: absolute;
+  content: "";
+  top: 14px;
+  left: 7px;
+  width: 0.5rem;
+  border: 2px solid var(--clr-accend);
+  border-radius: 30px;
+  transform: rotate(45deg);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.button-expand::after{
+  position: absolute;
+  content: "";
+  top: 14px;
+  left: 13px;
+  width: 0.5rem;
+  border: 2px solid var(--clr-accend);
+  border-radius: 30px;
+  transform: rotate(-45deg);
+}
+.button-collapse{
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+.button-collapse::before{
+  position: absolute;
+  content: "";
+  top: 14px;
+  left: 7px;
+  width: 0.5rem;
+  border: 2px solid var(--clr-accend);
+  border-radius: 30px;
+  transform: rotate(-45deg);
+}
+
+.button-collapse::after{
+  position: absolute;
+  content: "";
+  top: 14px;
+  left: 13px;
+  width: 0.5rem;
+  border: 2px solid var(--clr-accend);
+  border-radius: 30px;
+  transform: rotate(+45deg);
+}
+
+.content-details{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--clr-light);
 }
 
-.App-link {
-  color: #61dafb;
+.detail-button{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 1rem;
+  width: calc(100% - 2rem);
+  border-top: 1px rgba(73, 75, 80, 0.1) solid;
+  border-bottom: 1px rgba(73, 75, 80, 0.1) solid;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.detail-button h3{
+  font-size: 1.05rem;
+}
+
+.icon-check{
+  position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--clr-accend-2);
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+}
+
+.icon-check::before{
+  position: absolute;
+  content: "";
+  top: 21px;
+  left: 8px;
+  width: 0.5rem;
+  border: 2px solid var(--clr-light);
+  border-radius: 30px;
+  transform: rotate(45deg);
+}
+
+.icon-check::after{
+  position: absolute;
+  content: " ";
+  top: 18px;
+  left: 13px;
+  width: 1rem;
+  border: 2px solid var(--clr-light);
+  border-radius: 30px;
+  transform: rotate(-45deg);
+}
+
+.minus{
+  position: relative;
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--clr-light-100);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.minus::after{
+  position: absolute;
+  content: " ";
+  display: block;
+  top: 19px;
+  left: 12px;
+  width: 1rem;
+  border-top: 2px solid;
+  border-radius: 30px;
+}
+.plus{
+  position: relative;
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--clr-accend-2);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.plus::after{
+  position: absolute;
+  content: " ";
+  display: block;
+  top: 19px;
+  left: 12px;
+  width: 1rem;
+  border-top: 2px solid var(--clr-light);
+  border-radius: 30px;
+}
+
+.plus::before{
+  position: absolute;
+  content: " ";
+  display: block;
+  top: 19px;
+  left: 12px;
+  width: 1rem;
+  transform: rotate(90deg);
+  border-top: 2px solid var(--clr-light);
+  border-radius: 30px;
+}
+
+.hidden{
+  display: none !important;
 }

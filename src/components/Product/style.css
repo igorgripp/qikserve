@@ -1,0 +1,40 @@
+.item:first-child{
+  border-top: 1px  rgba(73, 75, 80, 0.1) solid;
+}
+.item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 7rem;
+  padding: 2rem, 0;
+  border-bottom: 1px rgba(73, 75, 80, 0.1) solid;
+  cursor: pointer;
+}
+
+.description{
+  width:65%;
+  padding: 1rem 0 1rem 1.5rem;
+}
+
+.description h1{
+  font-style: bold;
+  color: var(--clr-dark-900);
+}
+
+.description p{
+  margin: 0.5rem 0;
+  font-family: var(--ff-light);
+  font-size: 0.75rem;
+  color: var(--clr-dark-100);
+}
+
+.description span{
+  font-size: 0.75rem;
+  color: var(--clr-dark-500);
+}
+
+.picture{
+  width: 5rem;
+  height: auto;
+  padding-right: 1rem;
+}

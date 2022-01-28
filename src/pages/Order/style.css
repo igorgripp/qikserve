@@ -1,0 +1,94 @@
+.order-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  height: 100vh;
+  margin-top: 4rem;
+  background-color: var(--clr-light-100);
+}
+
+.order-message{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1.5rem;
+  background-color: var(--clr-light);
+}
+
+
+.order-details{
+  background-color: var(--clr-light);
+}
+
+.order-message h1{
+  padding-bottom: 1rem;
+  font-size: 1.75rem; 
+}
+
+.order-message p{
+  font-size: 1rem;
+  font-family: var(--ff-light);
+  color: var(--clr-dark-100);
+}
+
+.button-options{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 1rem 2.5rem 1rem 2.5rem;
+  padding: 1rem;
+  width: calc(100% - 5rem);
+  background-color: var(--clr-light);
+  border: 1px rgba(73, 75, 80, 0.2) solid;
+  cursor: pointer;
+}
+
+.button-options:last-child{
+  margin-top: 0rem;
+}
+
+.button-info{
+  margin-left: 2rem;
+}
+
+.button-info h2{
+  font-size: 1.25rem
+}
+
+.button-info p{
+  font-family: var(--ff-light);
+  padding-top: 0.5rem;
+}
+
+.button-info b{
+  font-family: var(--ff-normal);
+}
+
+.order-icon{
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.order-detail-description{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 3rem;
+  width: calc(100% - 6rem);
+  font-family: var(--ff-light);
+  font-size: 0.75rem;
+}
+
+.order-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 0.5em
+}
+
+.order-item:last-child{
+  padding-bottom: 0;
+}

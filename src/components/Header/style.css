@@ -1,0 +1,43 @@
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100vw;
+  height: 4rem;
+  background-color: var(--clr-accend);
+
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+
+}
+
+.logo{
+  width: 8rem;
+  height: auto;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.icon-wrap{
+  cursor: pointer;
+}
+
+.icon-shopping{
+  position: relative;
+  width: 1.25rem;
+  height: auto;
+  margin-right: 1.5rem;
+}
+
+.alert-items{
+  position: absolute;
+  content: " ";
+  width: .5rem;
+  height: .5rem;
+  background-color: red;
+  border-radius: 50%;
+  top: 1rem;
+  right: 2.5rem;
+}
+
